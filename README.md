@@ -1,2 +1,2 @@
-# project-figma-tutorial
+# Project figma tutorial
 The project is about the tutorial and improves skills of programmers
