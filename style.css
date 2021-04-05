@@ -2,7 +2,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    border: none !important;
+    /* border: none !important; */
 }
 
 /* Defualt options for pages */
@@ -20,7 +20,6 @@ html, body {
     position: relative;
     padding: 0;
     margin: 0;
-    border: solid 1px blue;
     min-height: 100vh;
     z-index: 0;
 }
@@ -38,9 +37,8 @@ a:hover {
 /* Logo and navigation */
 header {
     margin: 25px auto;
-    padding: 1em 3em 0;
-    border: 1px solid red;
-    max-width: 1600px;
+    padding: 1em 6em 0 1.875em;
+    max-width: 1800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,50 +76,43 @@ ul > li {
     margin: 0 auto;
     /* padding: 0; */
     max-width: 1700px;
-    border: 1px solid white;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    /* justify-content:space-around; */
     position: absolute;
     bottom:0;
     left:0;
     right:0;
-    /* min-height: calc(100vh - 1183px); */
 
 }
 
 .landpage-girl {
     margin-left: 120px;
-    /* position: relative; */
 }
 
 
 .landpage-girl, .landpage-girl img  {
     margin-right: 120px;
-    border: 1px solid greenyellow;
     max-width: 500.91px;
     padding: 0;
     order: 1;
 
 }
 
-.landpage-girl img {
+/* .landpage-girl img {
     border: 1px solid red;
 
-}
+} */
 
 .introduction {
     padding: 0 0 200px;
     flex-grow: 4;
     text-align: center;
     order: 2;
-    border: 1px solid yellow;
     z-index: 0;
 }
 
  .introduction2 {
-    border: 1px solid greenyellow;
     margin-left: 150px;
 }
 
@@ -171,7 +162,6 @@ p {
     left: 48%;
     position: absolute;
     padding: 120px;
-    /* border: 10px solid #1762A7; */
     border-radius: 200px;
     background-color: rgba(23, 98, 167, 0.1);
     z-index: -1;
@@ -207,21 +197,192 @@ p {
     z-index: -1;
 }
 
-
 /**
     Feature style page
 **/
 
+.containerFeature {
+    min-height: calc(100vh - 145px);
+}
 .mainFeature {
-margin: 100px auto 0;
-    /* padding: 0; */
-    max-width: 1700px;
+    display: flex;
+    flex-flow: nowrap;
+    margin: 50px auto 0;
+    max-width: 1345px;
+}
+
+/* Style of fonts */
+
+.chartsFeature {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.titleFeature {
+    margin-left: 25px;
+    font-weight: lighter;
+    font-size: 3em;
+    letter-spacing: 0.11em;
+}
+
+.Charts-box-feature {
+    margin-right: 242px;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.Charts-box-feature img {
+    margin: 20px auto 0;
+    width: 64.67px;
+    height: 64.42px;
+}
+
+
+
+.Charts-box-feature li {
+    margin: 0 0 0 70px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: #202027;
+    width: 129.33px;
+    height: 144.14px;
+}
+
+.Charts-box-feature li:first-child {
+    margin-left: 0;
+}
+
+.chart-p {
+    margin-top: 27px;
+    font-size: 18px;
+}
+
+.foot-chart-box {
+    max-width: 705px;
+    margin-left: 25px;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.11em;
+}
+
+.image-frame img {
+    width:529px;
+    height: 529px;
 }
 
 footer {
-    padding: 20px;
+    padding: 25px;
     background-color: #282830;
+    text-align: center;
 }
+
+/**
+    signUp style
+**/
+
+.mainSignUp {
+    margin: 62px auto 112px;
+    max-width: 1300px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-evenly;
+}
+
+.titleSignUp {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.titleSignUp h2 {
+    font-size: 72px;
+    font-weight: 300;
+    justify-content: center;
+    align-content: center;
+}
+
+span {
+    font-size: 96px;
+    color: #BC3A80;
+    font-weight: 400;
+}
+
+.joinBox {
+    background-color: #202027;
+    width: 654px;
+    height: 457px;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinBox .pass {
+    display: flex;
+    flex-direction: column;
+}
+
+.pass input {
+    font-size: 22px;
+    color: #fff;
+    margin: 10px 0 10px;
+    width: 529px;
+    height: 48px;
+    border-radius: 10px;
+    border: 5px solid #1762A7;
+    background-color: #202027;
+    outline: 0;
+}
+
+.pass {
+    font-size: 22px;
+}
+
+.btn-JoinNow input {
+    margin: 25px auto 0;
+    padding: 8px 108px;
+    background-color: #1762A7;
+    color: #fff;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-JoinNow input:focus {
+    outline: 0;
+}
+
+.btn-JoinNow input:hover {
+    background-color: #1b7cd8;
+    color: rgb(221, 221, 221);
+}
+
+/**
+    Footer Style
+**/
+
+footer li {
+    font-weight: 500;
+    margin-right: 120px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+footer li:nth-of-type(2) {
+    margin-right: 800px;
+}
+
 
 
 /* Prevent coolaps */
